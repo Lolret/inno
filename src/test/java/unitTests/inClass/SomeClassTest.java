@@ -29,7 +29,7 @@ class SomeClassTest {
     @Test
     void getSumm() {
         int res = someClass.getSumm(1, 2);
-        assertEquals(3, res);
+        assertEquals(1, res);
 
     }
 

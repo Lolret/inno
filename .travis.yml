@@ -35,8 +35,6 @@ addons:
     token:
       secure: "874407a11b7eee98207c966c9e269ef13cd4efdb"
 
-
-
 script:
   - ./gradlew clean check sonarqube build
 #  - sonar-scanner
