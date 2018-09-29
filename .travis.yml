@@ -15,9 +15,8 @@ branches:
     - master
     - develop
 
-
-#before_install:
-# - chmod +x gradlew
+before_install:
+ - chmod +x gradlew
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -30,15 +29,13 @@ cache:
     $HOME/.gradle
     .gradle
 
-#install:
-#  - gradle wrapper --gradle-version 4.4
-#install: ./gradlew assemble --stacktrace
+addons:
+  sonarcloud:
+    organization: lolret-github
+    token:
+      secure: 874407a11b7eee98207c966c9e269ef13cd4efdb
 
-#addons:
-#  sonarcloud:
-#    organization: lolret-github
-#    token:
-#      secure: 874407a11b7eee98207c966c9e269ef13cd4efdb
+
 
 script:
   - ./gradlew assemble
@@ -54,3 +51,9 @@ script:
 #    develop: $HEROKU_DEVELOP_APP
 #  on:
 #    all_branches: true
+
+
+#install:
+#  - gradle wrapper --gradle-version 4.4
+#install: ./gradlew assemble --stacktrace
+

@@ -12,7 +12,6 @@ public class HelperUser {
         Integer a1 = (a + 10 - b);
         Integer a2 = b * 12;
 
-        Integer res = helper.someHelperMethod(a1, a2);
-        return res;
+        return helper.someHelperMethod(a1, a2);
     }
 }
