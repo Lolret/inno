@@ -33,7 +33,7 @@ addons:
   sonarcloud:
     organization: "lolret-github"
     token:
-      secure: "874407a11b7eee98207c966c9e269ef13cd4efdb"
+      secure: $SONAR_API_KEY
 
 script:
   - ./gradlew clean check sonarqube build
