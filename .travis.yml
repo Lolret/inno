@@ -30,7 +30,7 @@ cache:
 
 #install:
 #  - gradle wrapper --gradle-version 4.4
-#install: ./gradlew assemble --stacktrace
+install: ./gradlew assemble --stacktrace
 
 #addons:
 #  sonarcloud:
