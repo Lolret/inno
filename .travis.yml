@@ -43,13 +43,8 @@ deploy:
   provider: heroku
   api_key:
     secure: 62c29a72-86e9-48f2-a6e4-86b18c21d3ad
-  app:
-    develop: hello-from-inno
-  on:
-    all_branches: true
+  app: inno
+#  on:
+#    all_branches: true
 
-
-#install:
-#  - gradle wrapper --gradle-version 4.4
-#install: ./gradlew assemble --stacktrace
 
