@@ -25,8 +25,10 @@ before_cache:
 
 cache:
   directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
+    $HOME/.m2/repository
+    $HOME/.sonar/cache
+    $HOME/.gradle
+    .gradle
 
 #install:
 #  - gradle wrapper --gradle-version 4.4
