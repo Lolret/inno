@@ -8,6 +8,4 @@
 out
 gen
 build
-#!gradle/wrapper/gradle-wrapper.jar
-.gradle/
-gradle
+!gradle/wrapper/gradle-wrapper.jar
