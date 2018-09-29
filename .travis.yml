@@ -38,7 +38,7 @@ addons:
 
 
 script:
-  - ./gradlew clean check sonarcube build
+  - ./gradlew clean check sonarqube build
 #  - sonar-scanner
 
 #deploy:
