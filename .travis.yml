@@ -8,7 +8,7 @@ jdk:
   - oraclejdk8
 
 os:
-  - windows
+  - linux
 
 branches:
   only:
@@ -32,16 +32,16 @@ cache:
 #  - gradle wrapper --gradle-version 4.4
 #install: ./gradlew assemble --stacktrace
 
-addons:
-  sonarcloud:
-    organization: lolret-github
-    token:
-      secure: 874407a11b7eee98207c966c9e269ef13cd4efdb
+#addons:
+#  sonarcloud:
+#    organization: lolret-github
+#    token:
+#      secure: 874407a11b7eee98207c966c9e269ef13cd4efdb
 
 script:
   - ./gradlew assemble
   - ./gradlew check
-  - sonar-scanner
+#  - sonar-scanner
   - rm -rf .scannerwork
 
 #deploy:
