@@ -39,10 +39,10 @@ script:
   - ./gradlew clean check sonarqube build
 #  - sonar-scanner
 
-deploy:
-  provider: heroku
-  api_key:
-    secure: 62c29a72-86e9-48f2-a6e4-86b18c21d3ad
+#deploy:
+#  provider: heroku
+#  api_key:
+#    secure: 62c29a72-86e9-48f2-a6e4-86b18c21d3ad
 #  app: inno-test
 #  on:
 #    all_branches: true
