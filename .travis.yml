@@ -31,9 +31,9 @@ cache:
 
 addons:
   sonarcloud:
-    organization: lolret-github
+    organization: "lolret-github"
     token:
-      secure: 874407a11b7eee98207c966c9e269ef13cd4efdb
+      secure: "874407a11b7eee98207c966c9e269ef13cd4efdb"
 
 
 
