@@ -8,7 +8,7 @@ jdk:
   - oraclejdk8
 
 os:
-  - linux
+  - windows
 
 branches:
   only:
@@ -29,9 +29,9 @@ install:
 
 addons:
   sonarcloud:
-    organization: $SONARCLOUD_ORGANIZATION
+    organization: lolret-github
     token:
-      secure: $SONARCLOUD_TOKEN
+      secure: 874407a11b7eee98207c966c9e269ef13cd4efdb
 
 script:
   - ./gradlew assemble
