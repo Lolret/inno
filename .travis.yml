@@ -43,7 +43,6 @@ deploy:
   provider: heroku
   api_key:
     secure: $HEROKU_API_KEY
-  app:
-    develop: $HEROKU_DEVELOP_APP
+  app: $HEROKU_DEVELOP_APP
   on:
     all_branches: true
