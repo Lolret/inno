@@ -12,7 +12,7 @@
 </head>
 <body>
 <%
-    List<Integer> list = (List<Integer>) request.getAttribute("myArr");
+    List<Integer> list = (List<Integer>) request.getAttribute("myAttr");
     for (Integer integer : list) {
 %>
 <%=integer%>
