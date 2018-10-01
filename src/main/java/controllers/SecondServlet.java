@@ -16,5 +16,6 @@ public class SecondServlet extends HttpServlet{
         List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8));
         req.setAttribute("myAttr", list);
         req.getRequestDispatcher("/iterator.jsp").forward(req, resp);
+
     }
 }
