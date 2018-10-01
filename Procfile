@@ -1,5 +1,1 @@
-web: java
-$JAVA_OPTS
--Dspring.profiles.active=prod
--jar build/server/webapp-runner-*.jar
---port $PORT build/libs/*.war
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/demo-0.0.1-SNAPSHOT.jar
