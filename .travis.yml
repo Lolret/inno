@@ -46,4 +46,5 @@ deploy:
   app: $HEROKU_DEVELOP_APP
   on:
     all_branches: true
+  skip_cleanup: true
 
