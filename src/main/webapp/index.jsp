@@ -11,7 +11,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  <<a href="hello">Hello</a>
+  <a href="hello">Hello</a>
   <br>
   <br>
   <form action="/hello" method="post">
