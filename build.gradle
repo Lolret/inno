@@ -18,7 +18,15 @@ repositories {
 }
 
 task hello << {
-    print 'Hello, world'
+    def count = 0
+    new groovy.swing.SwingBuilder().frame(title:'Frame', size:[300,300], show: true) {
+        borderLayout()
+        textlabel = label(text:"Click the button!", constraints: java.awt.BorderLayout.NORTH)
+        button(text:'Click Me',
+                actionPerformed: {count++; textlabel.text = "Clicked ${count} time(s)."; println "clicked"},
+                constraints:java.awt.BorderLayout.SOUTH)
+    }
+    Thread.sleep(10000)
 }
 
 dependencies {
