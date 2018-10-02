@@ -9,9 +9,23 @@
 <html>
 <head>
     <title>$Title$</title>
+<<<<<<< HEAD
 </head>
 <body>
 <a href="/brands">Телефоны по брендам</a>
 
 </body>
 </html>
+=======
+  </head>
+  <body>
+  <<a href="hello">Hello</a>
+  <br>
+  <br>
+  <form action="/hello" method="post">
+      <input type="text" name="textA">
+      <input type="submit">
+  </form>
+  </body>
+</html>
+>>>>>>> parent of 318acf5... road to heroku.
