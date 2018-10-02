@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <display-name>MyFirstServlet</display-name>
+
+    <display-name>MyFirtServlet</display-name>
 
     <servlet>
         <servlet-name>hello</servlet-name>
         <servlet-class>controllers.HelloServlet</servlet-class>
     </servlet>
-
-
-    <servlet>
-        <servlet-name>iterator</servlet-name>
-        <servlet-class>controllers.SecondServlet</servlet-class>
-    </servlet>
-
     <servlet-mapping>
         <servlet-name>hello</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>iterator</servlet-name>
+        <servlet-class>controllers.controller.SecondServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>iterator</servlet-name>
         <url-pattern>/iterator</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>brands</servlet-name>
+        <servlet-class>controllers.controller.BrandServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>brands</servlet-name>
+        <url-pattern>/brands</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>mobiles</servlet-name>
+        <servlet-class>controllers.controller.PhonesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mobiles</servlet-name>
+        <url-pattern>/phones</url-pattern>
+    </servlet-mapping>
 </web-app>
