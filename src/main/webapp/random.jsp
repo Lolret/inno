@@ -15,10 +15,11 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <title>Рандомайзер для Михаила!</title>
+    <link rel="icon" href="https://www.shareicon.net/download/2015/09/20/104107_fire_512x512.png">
+    <title>Рандомайзер Михаила</title>
 </head>
 <body>
-<h1 align="center" class="page-header">Рандомайзер Михаила!</h1>
+<h1 align="center" class="page-header">Личный рандомайзер Михаила</h1>
 
 
 <form align="center" class="form-inline" action="/random" method="post">
