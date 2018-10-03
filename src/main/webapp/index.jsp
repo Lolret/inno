@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>Hf</title>
 </head>
 <body>
 <a href="/brands">Телефоны по брендам</a>
