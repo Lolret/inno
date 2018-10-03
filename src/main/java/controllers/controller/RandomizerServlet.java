@@ -18,7 +18,13 @@ public class RandomizerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Integer rnd = new Random().nextInt(Integer.parseInt(req.getParameter("count"))) + 1;
+        String rnd;
+        try {
+            rnd = String.valueOf(new Random().nextInt(Integer.parseInt(req.getParameter("count"))) + 1);
+        } catch (NumberFormatException e) {
+            rnd = "Not a number was typed";
+        }
+
 
         req.setAttribute("enemy", rnd);
         req.getRequestDispatcher("/random.jsp").forward(req, resp);
