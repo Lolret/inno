@@ -17,16 +17,23 @@
 
 <form align="center" class="form-inline" action="/random" method="post">
     <div class="form-group mb-2">
-        <input  class="form-control-lg" type="text" name="count" placeholder="People count" autocomplete="off"
-        style="font-size: 32px;">
-        <input  class="form-control-lg" type="text" name="excluded" placeholder="excluded numbers from rendomize" autocomplete="off"
-                style="font-size: 32px;">
-        <input  class=" btn-lg btn-danger"  type="submit" value="Submit">
+        <input class="form-control-lg" type="text" name="count" placeholder="People count" autocomplete="off"
+               style="font-size: 32px;">
+        <input class="form-control-lg" type="text" name="excluded" placeholder="excluded numbers from rendomize"
+               autocomplete="off"
+               style="font-size: 32px;">
+        <input class=" btn-lg btn-danger" type="submit" value="Submit">
     </div>
 </form>
 
 
+<iframe src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%96%D0%B5%D1%80%D1%82%D0%B2%D0%B0%20%D0%B1%D0%BE%D0%B3%D1%83%20%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9&default-sum=100&button-text=14&yamoney-payment-type=on&button-size=m&button-color=orange&fio=on&successURL=&quickpay=small&account=410013598334456&"
+        width="260" height="36" align="center" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+</div>
+
 
 <h1 align="center" style="background-color:Orange; font-size: 150px;">${enemy}</h1>
+
+
 </body>
 </html>
