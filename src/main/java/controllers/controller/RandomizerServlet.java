@@ -12,6 +12,22 @@ import java.util.Random;
 public class RandomizerServlet extends HttpServlet {
     Random random = new Random();
 
+    String[] Participants = {
+            "Alexander Adamov",
+            "Ramil Gaisin",
+            "Alexey Gerasimov",
+            "Olga Harisova",
+            "Pavel Komar",
+            "Maxim Kovalenko",
+            "Denis Nurimanshin",
+            "Andrei Poponin",
+            "Dmitry Shmelev",
+            "Grigory Sostavkin",
+            "Vadim Spiridonov",
+            "Elvira Temirkhanova",
+            "Lyudmila Voronaya",
+            "Igor Yakovlev"};
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
@@ -25,14 +41,16 @@ public class RandomizerServlet extends HttpServlet {
 
         List<Integer> excluded = parseExcludeString(req.getParameter("excluded"));
         try {
+            int i =0;
             do {
-
+                i++;
                 rndInt = new Random().nextInt(Integer.parseInt(req.getParameter("count"))) + 1;
                 rndString = String.valueOf(rndInt);
-            } while (excluded.stream().anyMatch(rndInt::equals));
+            } while (excluded.stream().anyMatch(rndInt::equals) && i <30);
         } catch (NumberFormatException e) {
             rndString = "Not a number was typed";
         }
+
 
 
         req.setAttribute("enemy", rndString);
@@ -45,7 +63,7 @@ public class RandomizerServlet extends HttpServlet {
 
         List<Integer> integerList = new ArrayList<>();
         integerList.add(0);
-        for (String splited: integerStrings){
+        for (String splited : integerStrings) {
             try {
                 integerList.add(Integer.parseInt(splited));
             } catch (NumberFormatException e) {
