@@ -52,7 +52,6 @@ public class RandomizerServlet extends HttpServlet {
         }
 
 
-
         req.setAttribute("enemy", rndString);
         req.getRequestDispatcher("/random.jsp").forward(req, resp);
     }

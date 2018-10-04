@@ -15,11 +15,13 @@
 <h1 align="center" class="page-header">Личный рандомайзер Михаила</h1>
 
 
-<form align="center" class="form-inline" action="/random" method="post">
+<form align="center" class="form-inline" action="" method="post">
     <div class="form-group mb-2">
-        <input class="form-control-lg" type="text" name="count" placeholder="People count" autocomplete="off"
+        <input class="form-control-lg" type="text" name="count" value="<%=request.getParameter("count")%>"
+               placeholder="People count" autocomplete="off"
                style="font-size: 32px;">
         <input class="form-control-lg" type="text" name="excluded" placeholder="excluded numbers from rendomize"
+               value="<%=request.getParameter("excluded")%>"
                autocomplete="off"
                style="font-size: 32px;">
         <input class=" btn-lg btn-danger" type="submit" value="Submit">
