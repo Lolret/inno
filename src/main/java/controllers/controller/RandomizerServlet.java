@@ -31,6 +31,11 @@ public class RandomizerServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+
+
+
+        req.setAttribute("Test", "Testing");
+        System.out.println(req.getAttribute("Test"));
         req.getRequestDispatcher("/random.jsp").forward(req, resp);
     }
 
